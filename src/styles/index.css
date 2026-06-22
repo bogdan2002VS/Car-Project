@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-ink-50 font-sans text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+  /* Keep injected diagram SVGs readable in both themes. */
+  .diagram-svg svg {
+    @apply text-ink-800 dark:text-ink-100;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-ink-100 bg-white shadow-card dark:border-ink-800 dark:bg-ink-900;
+  }
+  .card-hover {
+    @apply transition hover:-translate-y-0.5 hover:border-mazda-300 hover:shadow-lg dark:hover:border-mazda-700;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-mazda-600 px-4 py-2.5 font-medium text-white transition hover:bg-mazda-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-mazda-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-ink-950;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-ink-200 bg-transparent px-4 py-2.5 font-medium text-ink-700 transition hover:bg-ink-100 dark:border-ink-700 dark:text-ink-200 dark:hover:bg-ink-800;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1.5 text-sm font-medium text-ink-600 transition hover:border-mazda-400 hover:text-mazda-700 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-300 dark:hover:text-mazda-400;
+  }
+  .chip-active {
+    @apply border-mazda-600 bg-mazda-600 text-white hover:border-mazda-600 hover:text-white dark:border-mazda-500 dark:bg-mazda-600;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold;
+  }
+  .kicker {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-mazda-600 dark:text-mazda-400;
+  }
+  .section-title {
+    @apply text-xl font-bold text-ink-900 dark:text-ink-50 sm:text-2xl;
+  }
+  .link-accent {
+    @apply text-mazda-700 underline-offset-2 hover:underline dark:text-mazda-400;
+  }
+  /* The thin Kodo "motion" accent line. */
+  .motion-line {
+    @apply h-1 w-16 rounded-full bg-gradient-to-r from-mazda-600 to-mazda-400;
+  }
+}
