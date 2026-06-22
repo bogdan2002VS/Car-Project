@@ -16,7 +16,7 @@ import '@fontsource/montserrat/800.css'
 
 import './styles/index.css'
 
-const router = createBrowserRouter(routes, { basename: '/car-project' })
+const router = createBrowserRouter(routes, { basename: '/Car-Project' })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

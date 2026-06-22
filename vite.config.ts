@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import { fileURLToPath, URL } from 'node:url'
 
-// GitHub Pages project site is served from /car-project/
-const BASE = '/car-project/'
+// GitHub Pages project site is served from /Car-Project/ (repo name is case-sensitive)
+const BASE = '/Car-Project/'
 
 export default defineConfig({
   base: BASE,

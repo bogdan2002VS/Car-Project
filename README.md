@@ -15,7 +15,7 @@ instalează ca aplicație pe telefon sau PC.
 După publicare, aplicația e disponibilă la un link de tipul:
 
 ```
-https://bogdan2002vs.github.io/car-project/
+https://bogdan2002vs.github.io/Car-Project/
 ```
 
 - Se deschide în orice browser (telefon / PC).
@@ -28,7 +28,7 @@ Ai nevoie de [Node.js](https://nodejs.org) (v20+). Apoi, în folderul proiectulu
 
 ```bash
 npm install      # o singură dată
-npm run dev      # pornește aplicația la http://localhost:5173/car-project/
+npm run dev      # pornește aplicația la http://localhost:5173/Car-Project/
 ```
 
 Alte comenzi utile:
